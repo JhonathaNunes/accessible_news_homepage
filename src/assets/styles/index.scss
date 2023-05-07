@@ -1,0 +1,19 @@
+@import "./variables";
+
+.icon-button {
+  border: none;
+  padding: $px16;
+  color: $primary-color;
+  background-color: transparent;
+  font-family: $title-font-family;
+  font-size: $px16;
+  text-transform: uppercase;
+
+  svg {
+    margin-right: $px16;
+  }
+}
+
+.icon-button:hover {
+  filter: opacity(0.75);
+}
