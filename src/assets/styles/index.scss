@@ -1,13 +1,30 @@
 @import "./variables";
 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: $title-font-family;
+  font-size: $px16;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
 .icon-button {
   border: none;
   padding: $px16;
   color: $primary-color;
   background-color: transparent;
-  font-family: $title-font-family;
-  font-size: $px16;
+  font-size: 0.9rem;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 
   svg {
     margin-right: $px16;
@@ -16,4 +33,8 @@
 
 .icon-button:hover {
   filter: opacity(0.75);
+}
+
+.text-color-red {
+  color: $red;
 }

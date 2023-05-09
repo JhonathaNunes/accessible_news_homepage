@@ -1,11 +1,17 @@
 @import "./variables";
 
 .header-container {
-  background-color: #0a5e8d;
-  color: #fff;
-  height: 60px;
+  background-color: $white;
+  color: $primary-color;
   display: flex;
+  flex-direction: column;
+  width: 100%;
   align-items: center;
+}
+
+.header-wrapper {
+  width: 100%;
+  border-bottom: $red 1px solid;
 }
 
 .header-content {
@@ -15,14 +21,47 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 20px;
+  padding: 20px 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  width: 244px;
+}
+
+.justify-left {
+  justify-content: flex-start;
+}
+
+.justify-right {
+  justify-content: flex-end;
 }
 
 .header-logo {
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    width: 400px;
+  }
+
+  a:hover {
+    filter: opacity(0.7);
+  }
+}
+
+.sub-header {
+  color: $dark-gray;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 2rem;
+    margin: 0 $px16;
+  }
 }
 
 .header-nav-list {
@@ -37,7 +76,7 @@
 }
 
 .header-nav-item a {
-  color: #fff;
+  color: $red;
   text-decoration: none;
   font-size: 16px;
 }
@@ -62,3 +101,4 @@
   border-radius: 5px;
   font-size: 16px;
 }
+  
