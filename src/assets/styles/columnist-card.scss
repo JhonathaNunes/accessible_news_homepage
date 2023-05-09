@@ -1,0 +1,49 @@
+@import "./variables";
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.identification-card {
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.identification-card img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.identification-card h5 {
+  color: $light-blue;
+  font-weight: bold;
+  font-size: $px18;
+  margin: 0 16px 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.column-name {
+  margin: 0;
+  font-size: $px18;
+  text-align: left;
+}
+
+.column-name a {
+  color: $primary-color;
+  font-style: italic;
+}
+
+a:hover {
+    filter: opacity(0.75);
+}

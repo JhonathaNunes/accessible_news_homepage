@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import IconBtn from './components/IconBtn'
-import { FaUser } from "react-icons/fa";
 import Header from './components/Header'
+import ColumnistCard from './components/ColumnistCard'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Header />
+      <ColumnistCard
+        src={'https://f.i.uol.com.br/fotografia/2018/02/02/15175771955a7463ebced4d_1517577195_1x1_th.jpg'}
+        columnistName={'Joel Pinheiro da Fonseca'}
+        columnTitle={'Por que Lula segue batendo cabeça no Congresso?'}
+        columnUrl={''}
+      />
     </>
   )
 }
