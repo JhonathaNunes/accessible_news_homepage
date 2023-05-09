@@ -36,7 +36,7 @@ const Header = () => {
             />
           </div>
           <div className="header-logo">
-            <a href="#">
+            <a href="#" aria-label="Logo: Folha de São Paulo">
               <Logo />
             </a>
             <div className="sub-header">
