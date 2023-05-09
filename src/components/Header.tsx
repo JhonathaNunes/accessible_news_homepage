@@ -3,8 +3,22 @@ import "../assets/styles/header.scss";
 import IconBtn from "./IconBtn";
 import Logo from "./Logo";
 import Stars from "./Stars";
+import Nav from "./Nav";
 
 const Header = () => {
+  const navItems = [
+    { label: "últimas", url: "/" },
+    { label: "opinião", url: "/about" },
+    { label: "política", url: "/services" },
+    { label: "economia", url: "/contact" },
+    { label: "mundo", url: "/contact" },
+    { label: "cotidiano", url: "/contact" },
+    { label: "esporte", url: "/contact" },
+    { label: "cultura", url: "/contact" },
+    { label: "f5", url: "/contact" },
+    { label: "podcasts", url: "/contact" },
+  ];
+
   return (
     <header className="header-container">
       <div className="header-wrapper">
@@ -46,49 +60,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <nav className="header-nav">
-          <ul className="header-nav-list">
-            <li className="header-nav-item">
-              <a href="/">Home</a>
-            </li>
-            <li className="header-nav-item">
-              <a href="/politics">Politics</a>
-            </li>
-            <li className="header-nav-item">
-              <a href="/business">Business</a>
-            </li>
-            <li className="header-nav-item">
-              <a href="/sports">Sports</a>
-            </li>
-            <li className="header-nav-item">
-              <a href="/culture">Culture</a>
-            </li>
-          </ul>
-        </nav>
-
-      {/* <nav className="header-nav">
-          <ul className="header-nav-list">
-            <li className="header-nav-item">
-              <a href="/">Home</a>
-            </li>
-            <li className="header-nav-item">
-              <a href="/politics">Politics</a>
-            </li>
-            <li className="header-nav-item">
-              <a href="/business">Business</a>
-            </li>
-            <li className="header-nav-item">
-              <a href="/sports">Sports</a>
-            </li>
-            <li className="header-nav-item">
-              <a href="/culture">Culture</a>
-            </li>
-          </ul>
-        </nav>
-        <div className="header-search">
-          <input type="text" placeholder="Search" />
-          <button>Go</button>
-        </div> */}
+      <Nav navItems={navItems}/>
     </header>
   );
 }
