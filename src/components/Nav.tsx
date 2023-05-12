@@ -5,11 +5,11 @@ interface NavItem {
   url: string;
 }
 
-interface Props {
+interface NavProps {
   navItems: NavItem[];
 }
 
-const Nav =({ navItems }: Props) => {
+const Nav = ({ navItems }: NavProps) => {
   return (
     <nav className="horizontal-nav-container">
       <ul className="horizontal-nav-list">

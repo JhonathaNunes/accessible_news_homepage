@@ -1,13 +1,13 @@
 import "../assets/styles/columnist-card.scss"
 
-interface ColCardProps {
+export interface ColCardProps {
   src: string;
   columnistName: string;
   columnTitle: string;
   columnUrl: string;
 }
 
-const ColumnistCard = ({src, columnistName, columnTitle, columnUrl}: ColCardProps) => {
+export const ColumnistCard = ({src, columnistName, columnTitle, columnUrl}: ColCardProps) => {
   return <div className="card-container">
     <div className="identification-card">
       <a href={columnUrl}><img src={src} alt={`Colunista ${columnistName}`} /></a>
@@ -18,5 +18,3 @@ const ColumnistCard = ({src, columnistName, columnTitle, columnUrl}: ColCardProp
     </p>
   </div>
 }
-
-export default ColumnistCard;
