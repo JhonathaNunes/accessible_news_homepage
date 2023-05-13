@@ -1,5 +1,4 @@
-import {
-  ColumnistCard,
+import ColumnistCard, {
   ColCardProps
 } from "./ColumnistCard";
 

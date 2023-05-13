@@ -7,7 +7,7 @@ export interface ColCardProps {
   columnUrl: string;
 }
 
-export const ColumnistCard = ({src, columnistName, columnTitle, columnUrl}: ColCardProps) => {
+const ColumnistCard = ({src, columnistName, columnTitle, columnUrl}: ColCardProps) => {
   return <div className="card-container">
     <div className="identification-card">
       <a href={columnUrl}><img src={src} alt={`Colunista ${columnistName}`} /></a>
@@ -18,3 +18,5 @@ export const ColumnistCard = ({src, columnistName, columnTitle, columnUrl}: ColC
     </p>
   </div>
 }
+
+export default ColumnistCard;
