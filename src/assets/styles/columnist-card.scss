@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -27,7 +27,7 @@ a {
 .identification-card h5 {
   color: $light-blue;
   font-weight: bold;
-  font-size: $px18;
+  font-size: 1em;
   margin: 0 16px 0;
   text-align: left;
   text-decoration: none;
@@ -35,7 +35,7 @@ a {
 
 .column-name {
   margin: 0;
-  font-size: $px18;
+  font-size: 1em;
   text-align: left;
 }
 

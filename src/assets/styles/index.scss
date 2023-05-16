@@ -6,7 +6,7 @@
   padding: 0;
   text-align: center;
   font-family: $title-font-family;
-  font-size: $px16;
+  font-size: $px18;
 }
 
 body {
@@ -22,12 +22,14 @@ body {
   padding: $px16;
   color: $primary-color;
   background-color: transparent;
-  font-size: 0.9rem;
+  font-size: $px15;
   text-transform: uppercase;
   display: flex;
   align-items: center;
 
   svg {
+    height: 1em;
+    width: 1em;
     margin-right: $px16;
   }
 }
@@ -38,9 +40,4 @@ body {
 
 .text-color-red {
   color: $red;
-}
-
-.main-headline {
-  font-size: 2rem;
-  color: $primary-color;
 }
