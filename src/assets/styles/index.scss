@@ -62,3 +62,20 @@ body {
   width: $width25;
   background-color: aqua;
 }
+
+.news-and-slider-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.slider {
+  width: 66.66%;
+  background-color: brown;
+}
+
+.side-news {
+  width: 33.66%;
+  display: flex;
+  flex-direction: column;
+}

@@ -17,7 +17,7 @@ interface NewsArticleProps {
   href: string;
   headline: string;
   subheadline?: string;
-  relateds: RelatedArticle[];
+  relateds?: RelatedArticle[];
 };
 
 const returnCorrectHeading = (headlineSize: headlineSize, headline: string) => {
@@ -41,6 +41,8 @@ const NewsArticle = ({
   subheadline,
   relateds
 }: NewsArticleProps) => {
+  let isMain = headlineSize === "h1";
+
   return (
     <article className="article">
       <div className="headline-head">
@@ -54,13 +56,17 @@ const NewsArticle = ({
       </div>
       <a href={href}>
         {returnCorrectHeading(headlineSize, headline)}
-        { subheadline && <p className="subheadline">{subheadline}</p> }
+        { subheadline && <p className={`subheadline ${!isMain && "secondary-headlines"}`}>{subheadline}</p> }
       </a>
       <ul className="summary-list">
-        { relateds.map((related, index) => 
+        { relateds?.map((related, index) => 
           <li key={index}>
             <BsArrowReturnRight />
-            <a href={related.link}><h2>{related.title}</h2></a>
+            <a href={related.link}>
+              <h2 className={`${!isMain && "secondary-headlines"}`}>
+                {related.title}
+              </h2>
+            </a>
           </li>
         )}
       </ul>

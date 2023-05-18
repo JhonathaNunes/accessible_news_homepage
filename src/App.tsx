@@ -1,6 +1,7 @@
 import ColumnistsSection from './components/ColumistsSection'
 import Header from './components/Header'
 import NewsArticle from './components/NewsArticle';
+import SideNews from './components/SideNews';
 
 function App() {
   const columns = [
@@ -56,7 +57,13 @@ function App() {
               headline='PGR sob Lula apoia investigação contra Bolsonaro que antes considerava ilegal e nula'
               subheadline='Procuradoria chefiada por Augusto Aras se manifestou por arquivamento de apuração várias vezes ao longo de 2022'
               relateds={relateds}
-              />
+            />
+            <div className='news-and-slider-container'>
+                <div className='slider'>
+
+                </div>
+                <SideNews />
+            </div>
           </section>
           <aside className='aside-content'>
 
