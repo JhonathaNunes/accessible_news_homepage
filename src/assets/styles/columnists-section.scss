@@ -1,8 +1,10 @@
+@import "./variables.scss";
+
 .columns-section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
     max-width: 1280px;
-    margin: 20px auto auto;
+    margin: $px35 auto auto;
 }

@@ -46,3 +46,19 @@ body {
 .text-color-red {
   color: $red;
 }
+
+.news-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: $px35;
+}
+
+.news-content {
+  width: $width75;
+}
+
+.aside-content {
+  width: $width25;
+  background-color: aqua;
+}

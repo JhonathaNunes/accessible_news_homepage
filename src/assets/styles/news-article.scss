@@ -1,0 +1,85 @@
+@import "./variables";
+
+.article {
+  width: 100%;
+}
+
+.headline {
+  color: $primary-color;
+  text-align: left;
+  margin: 0 0 0.35em 0;
+}
+
+.h1 {
+  font-size: 2.2em;
+}
+
+.h2 {
+  font-size: 1.66em;
+}
+
+.h3 {
+  font-size: 1.33em;
+}
+
+.subheadline {
+  font-size: 1em;
+  color: $dark-gray;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 0 0.77em 0;
+}
+
+.article svg {
+  fill: $light-blue;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-right: 0.555em;
+  margin-top: 0.222em;
+  width: 0.833em;
+  height: 0.833em;
+}
+
+.summary-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+
+  li {
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: auto;
+    padding: 0 $px15;
+  }
+
+  li h2 {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+    color: $primary-color;
+  }
+}
+
+.headline-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: $px14;
+
+  h3 {
+    color: $primary-color;
+    font-size: 0.77em;
+    font-weight: 500;
+    margin: 0 $px16 0 0;
+  }
+
+  svg {
+    margin-top: 0;
+    height: $px16;
+    width: auto;
+    fill: $icon-grey;
+  }
+}
