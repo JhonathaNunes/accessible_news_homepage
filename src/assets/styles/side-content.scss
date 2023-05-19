@@ -1,0 +1,26 @@
+@import "./variables";
+
+.image-headline-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.444em;
+}
+
+.aside-image {
+  width: 125px;
+  height: 83.33px;
+  margin: 0 15px 0 0;
+}
+
+.aside-headline {
+  text-align: left;
+  margin: 0;
+  font-size: 1em;
+  color: $primary-color;
+}
+
+.aside-summary {
+  font-size: 0.888em;
+  color: $dark-gray;
+  text-align: left;
+}
