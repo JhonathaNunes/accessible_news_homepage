@@ -8,15 +8,15 @@ import Nav from "./Nav";
 const Header = () => {
   const navItems = [
     { label: "últimas", url: "/" },
-    { label: "opinião", url: "/about" },
-    { label: "política", url: "/services" },
-    { label: "economia", url: "/contact" },
-    { label: "mundo", url: "/contact" },
-    { label: "cotidiano", url: "/contact" },
-    { label: "esporte", url: "/contact" },
-    { label: "cultura", url: "/contact" },
-    { label: "f5", url: "/contact" },
-    { label: "podcasts", url: "/contact" },
+    { label: "opinião", url: "/opiniao" },
+    { label: "política", url: "/politica" },
+    { label: "economia", url: "/economia" },
+    { label: "mundo", url: "/mundo" },
+    { label: "cotidiano", url: "/cotidiano" },
+    { label: "esporte", url: "/esporte" },
+    { label: "cultura", url: "/cultura" },
+    { label: "f5", url: "/f5" },
+    { label: "podcasts", url: "/podcasts" },
   ];
 
   return (

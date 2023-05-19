@@ -34,12 +34,12 @@ function App() {
 
   const relateds = [
     {
-      title: "PEC da Anistia se choca com decisões de STF e TSE sobre inclusão de mulheres e negros",
-      link: "https://www1.folha.uol.com.br/poder/2023/05/ministerio-da-igualdade-racial-chama-pec-da-anistia-de-retrocesso-inadmissivel.shtml"
+      title: "TSE cassou Deltan com base em precedente de propaganda irregular e disputa na magistratura",
+      link: "https://www1.folha.uol.com.br/poder/2023/05/tse-cassou-deltan-com-base-em-precedente-de-propaganda-irregular-e-disputa-na-magistratura.shtml"
     },
     {
-      title: "PEC da Anistia se choca com decisões de STF e TSE sobre inclusão de mulheres e negros",
-      link: "https://www1.folha.uol.com.br/poder/2023/05/ministerio-da-igualdade-racial-chama-pec-da-anistia-de-retrocesso-inadmissivel.shtml"
+      title: "Ministro do TSE algoz de Deltan Dallagnol foi alvo de delação na Lava Jato",
+      link: "https://www1.folha.uol.com.br/poder/2023/05/ministro-do-tse-algoz-de-deltan-foi-alvo-de-delacao-na-lava-jato.shtml"
     },
   ];
 
@@ -57,7 +57,7 @@ function App() {
       headlineKicker: 'TV Folha',
       headlineLink: 'https://www1.folha.uol.com.br/tv/',
       headline: 'Como traficantes evangélicos atuam no Rio? TV explica',
-      summary: 'Isabella Faria conversa com Anna Virginia Balloussier no programa, ao vivo, às 18j',
+      summary: 'Isabella Faria conversa com Anna Virginia Balloussier no programa, ao vivo, às 18h',
       href: 'https://www1.folha.uol.com.br/tv/2023/05/como-traficantes-evangelicos-atuam-no-rio-tv-folha-explica.shtml',
       imgSrc: 'https://f.i.uol.com.br/fotografia/2023/03/13/1678704050640efdb225345_1678704050_3x2_xs.jpg',
       alt: 'Thumbnail para agregador de podcasts LIVE TV FOLHA',
@@ -81,12 +81,12 @@ function App() {
         <div className='news-block'>
           <section className='news-content'>
             <NewsArticle
-              headlineKicker='PEC DA ANISTIA'
+              headlineKicker='FOLHAJUS'
               kickerLink='https://www1.folha.uol.com.br/poder/folhajus/'
               headlineSize='h1'
-              href='https://www1.folha.uol.com.br/poder/2023/05/pgr-sob-lula-apoia-investigacao-contra-bolsonaro-que-antes-considerava-ilegal-e-nula.shtml'
-              headline='PGR sob Lula apoia investigação contra Bolsonaro que antes considerava ilegal e nula'
-              subheadline='Procuradoria chefiada por Augusto Aras se manifestou por arquivamento de apuração várias vezes ao longo de 2022'
+              href='https://www1.folha.uol.com.br/poder/2023/05/moro-culpa-lula-e-pt-por-cassacao-de-deltan-e-diz-que-tse-leva-inseguranca-ao-congresso.shtml'
+              headline='Moro culpa Lula e PT por cassação de Deltan e diz que TSE leva insegurança ao Congresso'
+              subheadline='Senador e ex-ministro de Bolsonaro afirma que tribunal fez interpretação incorreta da Lei da Ficha Limpa'
               relateds={relateds}
             />
             <div className='news-and-slider-container'>
