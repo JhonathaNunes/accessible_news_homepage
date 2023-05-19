@@ -1,8 +1,10 @@
 import AsideContent from './components/AsideContent';
+import Carousel from './components/Carousel';
 import ColumnistsSection from './components/ColumistsSection'
 import Header from './components/Header'
 import NewsArticle from './components/NewsArticle';
 import SideNews from './components/SideNews';
+import Slide from './components/Slide';
 
 function App() {
   const columns = [
@@ -91,7 +93,36 @@ function App() {
             />
             <div className='news-and-slider-container'>
                 <div className='slider'>
-
+                  <Carousel>
+                    <Slide
+                      imgSrc="https://f.i.uol.com.br/fotografia/2021/11/13/1636812157618fc57d2cbbe_1636812157_3x2_rt.jpg"
+                      alt="Peixe leão"
+                      title="Ameaça natural"
+                      summary="Presença do peixe-leão é registrada na reserva biológica Atol das Rocas, ligada ao Rio Grande do Norte, e ameaça ambiente marinho - Yang Guanyu"
+                      href="https://www1.folha.uol.com.br/ambiente/2023/05/peixe-leao-chega-ao-atol-das-rocas-e-ameaca-ambiente-marinho.shtml"
+                    />
+                    <Slide
+                      imgSrc="https://f.i.uol.com.br/fotografia/2023/05/19/16845203486467bd9c792b4_1684520348_3x2_xl.jpg"
+                      alt="Nova casa de Beyoncé e Jay-Z"
+                      title="LAR DE R$ 1 BILHÃO"
+                      summary="Beyoncé e Jay-Z compram segunda casa mais cara dos Estados Unidos, na Califórnia; veja fotos - Divulgação"
+                      href="https://www1.folha.uol.com.br/mercado/2023/05/placas-solares-em-favela-geram-economia-e-renda-no-rio.shtml"
+                    />
+                    <Slide
+                      imgSrc="https://f.i.uol.com.br/fotografia/2023/05/19/1684505139646782336cba6_1684505139_3x2_xl.jpg"
+                      alt="Imagem em inteligência artificial para alterar roupa"
+                      title="(NÃO TÃO) INTELIGENTE"
+                      summary="Inteligência artificial muda roupa e cenário em foto para o LinkedIn, mas tem bugs; repórter ficou com três mãos na 1ª tentativa, e na outra, paletó marinho ficou cinza - Marcelo Chello/Folhapress, com intervenção no Canva"
+                      href="https://www1.folha.uol.com.br/mercado/2023/05/placas-solares-em-favela-geram-economia-e-renda-no-rio.shtml"
+                    />
+                    <Slide
+                      imgSrc="https://f.i.uol.com.br/fotografia/2023/05/10/1683766223645c3bcf78b18_1683766223_3x2_rt.jpg"
+                      alt="Energia Solar em Favelas"
+                      title="ENERGIA SOLAR EM FAVELAS"
+                      summary="Eduardo Avila, economista, dirige cooperativa que promove a instalação de painéis e o desenvolvimento sustentável nas comunidades - Eduardo Anizelli/Folhapress"
+                      href="https://www1.folha.uol.com.br/mercado/2023/05/placas-solares-em-favela-geram-economia-e-renda-no-rio.shtml"
+                    />
+                  </Carousel>
                 </div>
                 <SideNews />
             </div>

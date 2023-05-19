@@ -1,0 +1,31 @@
+@import "./variables";
+
+.carousel-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-button {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border: none;
+  opacity: 0.4;
+
+  svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.carousel-button.previous {
+  left: 0;
+}
+
+.carousel-button.next {
+  right: 0;
+}
