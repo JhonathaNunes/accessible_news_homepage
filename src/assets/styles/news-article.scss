@@ -64,26 +64,6 @@
   }
 }
 
-.headline-head {
-  display: flex;
-  align-items: center;
-  margin-bottom: $px14;
-
-  h3 {
-    color: $primary-color;
-    font-size: 0.77em;
-    font-weight: 500;
-    margin: 0 $px16 0 0;
-  }
-
-  svg {
-    margin-top: 0;
-    height: $px16;
-    width: auto;
-    fill: $icon-grey;
-  }
-}
-
 .secondary-headlines {
   font-size: 0.88em !important;
 }

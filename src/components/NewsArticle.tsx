@@ -2,6 +2,7 @@ import { BsArrowReturnRight } from "react-icons/bs";
 import { BiBookmark } from "react-icons/bi";
 import { IoMdShare } from "react-icons/io";
 import "../assets/styles/news-article.scss";
+import HeadlineHead from "./HeadlineHead";
 
 type headlineSize = "h1"|"h2"|"h3";
 
@@ -18,7 +19,7 @@ interface NewsArticleProps {
   headline: string;
   subheadline?: string;
   relateds?: RelatedArticle[];
-};
+}
 
 const returnCorrectHeading = (headlineSize: headlineSize, headline: string) => {
   if (headlineSize === "h2") {
@@ -41,19 +42,11 @@ const NewsArticle = ({
   subheadline,
   relateds
 }: NewsArticleProps) => {
-  let isMain = headlineSize === "h1";
+  const isMain = headlineSize === "h1";
 
   return (
     <article className="article">
-      <div className="headline-head">
-        <a href={kickerLink}>
-          <h3 className="headline-kicker">
-            {headlineKicker}
-          </h3>
-        </a>
-        <IoMdShare />
-        <BiBookmark />
-      </div>
+      <HeadlineHead kickerLink={kickerLink} headlineKicker={headlineKicker} />
       <a href={href}>
         {returnCorrectHeading(headlineSize, headline)}
         { subheadline && <p className={`subheadline ${!isMain && "secondary-headlines"}`}>{subheadline}</p> }
