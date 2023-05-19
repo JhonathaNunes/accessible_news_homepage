@@ -30,11 +30,11 @@ const SideNews = () => {
         ]}
       />
       <NewsArticle
-        headlineKicker='PEC DA ANISTIA'
-        kickerLink='https://www1.folha.uol.com.br/poder/folhajus/'
+        headlineKicker='AGENTES INFILTRADOS'
+        kickerLink=''
         headlineSize='h3'
-        href='https://www1.folha.uol.com.br/poder/2023/05/pgr-sob-lula-apoia-investigacao-contra-bolsonaro-que-antes-considerava-ilegal-e-nula.shtml'
-        headline='PGR sob Lula apoia investigação contra Bolsonaro que antes considerava ilegal e nula'
+        href='https://www1.folha.uol.com.br/cotidiano/2023/05/pm-apreende-119-carros-em-acao-contra-rachas-organizados-por-influenciadores-em-sp.shtml'
+        headline='PM apreende 119 carros em ação contra rachas organizados por influenciadores em SP'
         subheadline='Procuradoria chefiada por Augusto Aras se manifestou por arquivamento de apuração várias vezes ao longo de 2022'
       />
     </div>
