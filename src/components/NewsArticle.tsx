@@ -1,6 +1,4 @@
 import { BsArrowReturnRight } from "react-icons/bs";
-import { BiBookmark } from "react-icons/bi";
-import { IoMdShare } from "react-icons/io";
 import "../assets/styles/news-article.scss";
 import HeadlineHead from "./HeadlineHead";
 
